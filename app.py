@@ -75,7 +75,7 @@ def register():
     conn.close()
 
     # Create QR
-    qr_data = f"http://127.0.0.1:5000/student/{student_id}"
+    qr_data = f"https://student-qr-system.onrender.com/student/{student_id}"
     qr = qrcode.make(qr_data)
 
     qr_filename = f"{student_id}_qr.png"
